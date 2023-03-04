@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+@font-face {
+    font-family: "AwalRamadhan";
+    src: url("../font/AwalRamadhan.ttf");
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 500px;
+}
+
+body {
+    height: 90%;
+    margin: 2%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    font-size: 25px;
+}
+
+button {
+    background-color: #222;
+    color: #fff;
+    height: 35px;
+    width: auto;
+    border: 1px #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+p {
+    font-size: 20px;
+}
+
+#light {
+    background-color: #fff;
+    color: #111;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+#light .mid img,
+#light .bottom img {
+    filter: invert(100%);
+}
+
+#light a {
+    color: #111;
+}
+
+#light .card {
+    background: rgba(1, 1, 1, 0.1);
+}
+
+#dark {
+    background-color: #111;
+    color: #fff;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+#dark a {
+    color: #fff;
+}
+
+#dark .card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#dark .mosque img,
+#dark .lattern img {
+    filter: invert(100%);
+}
+
+.top {
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: grab;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    z-index: 2;
+}
+
+.mid h1 {
+    font-family: "AwalRamadhan";
+    font-size: 72px;
+}
+
+.mid a {
+    display: none;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 3%;
+}
+
+.mid a,
+.bottom a {
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mid img,
+.bottom img {
+    width: auto;
+    height: 65px;
+    border-radius: 50%;
+    border: solid #fff 1px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.bottom img {
+    height: 45px;
+}
+
+.bottom img:hover {
+    width: auto;
+    height: 55px;
+}
+
+.lattern {
+    position: fixed;
+    top: -24px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    animation: up-down 0.75s;
+}
+
+.mosque {
+    position: fixed;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    animation: down-up 0.75s;
+}
+
+.mosque img,
+.lattern img {
+    display: flex;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 25%;
+}
+
+.card {
+    margin: 6px;
+    padding: 6px;
+    width: 104px;
+    border-radius: 24px;
+    text-align: center;
+    animation: pop-in 0.75s;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 52px;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+.me-auto {
+    margin-right: auto;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+input:checked+.slider {
+    background-color: #fff;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #000;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        top: -50%;
+    }
+}
+
+@keyframes down-up {
+    0% {
+        bottom: -100%;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    body .mosque img,
+    body .lattern img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    body #light .top {
+        background-color: #fff;
+    }
+    body #dark .top {
+        background-color: #111;
+    }
+    body .mid a {
+        display: inline-flex;
+    }
+    body .bottom a {
+        display: none;
+    }
+    body .lattern {
+        top: 96px;
+    }
+}
+
+@media (max-width: 576px) {
+    body .mid {
+        position: relative;
+        top: 50vh;
+    }
+    body .d-flex .card {
+        width: 30%;
+    }
+}

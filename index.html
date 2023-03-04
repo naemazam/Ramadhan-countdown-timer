@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/count.js"></script>
+    <link rel="icon" href="img/icon.png" />
+    <title>Ramadhan 2023 Countdown</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+</head>
+
+<body onload="identify()">
+    <div class="lattern">
+        <img src="img/lattern.png" alt="" />
+    </div>
+    <div class="top">
+        <p class="me-auto">
+            <a href="https://naemazam.com" target="_blank">
+					<b>Naem Azam</b>
+				</a>
+        </p>
+        <label class="switch ms-auto">
+				<input type="checkbox" id="switch" onchange="toggleCheck()" />
+				<span class="slider"></span>
+			</label>
+    </div>
+    <div class="mid">
+        <h1>Ramadhan 2023</h1>
+        <div class="d-flex">
+            <div class="card">
+                <h3 id="days"></h3>
+                <p>DAYS</p>
+            </div>
+            <div class="card">
+                <h3 id="hours"></h3>
+                <p>HOURS</p>
+            </div>
+            <div class="card">
+                <h3 id="minutes"></h3>
+                <p>MINUTES</p>
+            </div>
+            <div class="card">
+                <h3 id="seconds"></h3>
+                <p>SECONDS</p>
+            </div>
+        </div>
+        <a href="mailto:#">
+				<img src="img/email.png" alt="Email" />
+			</a>
+        <a href="#">
+				<img src="img/linkedin.png" alt="LinkedIn" />
+			</a>
+        <a href="#">
+				<img src="img/ig.png" alt="Insta" />
+			</a>
+        <a href="https://github.com/naemazam">
+				<img src="img/github.png" alt="Github" />
+			</a>
+    </div>
+    <div class="bottom">
+        <a href="mailto:#">
+				<img src="img/email.png" alt="Email" />
+			</a>
+        <a href="#">
+				<img src="img/linkedin.png" alt="LinkedIn" />
+			</a>
+        <a href="#">
+				<img src="img/ig.png" alt="Insta" />
+			</a>
+        <a href="https://github.com/naemazam">
+				<img src="img/github.png" alt="Github" />
+			</a>
+    </div>
+    <div class="mosque">
+        <img src="img/mosque.png" alt="" />
+    </div>
+    <script defer src="node_modules/@vercel/analytics/dist/index.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
